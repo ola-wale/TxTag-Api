@@ -1,10 +1,18 @@
 # TxTag-Api
 
-Backend REST api server for <a href="https://github.com/ola-wale/TxTag">TxTag</a>
+Backend REST API server for <a href="https://github.com/ola-wale/TxTag">TxTag</a>
+
+## Documentation
+
+<a href="https://documenter.getpostman.com/view/3804875/RW1Vs31Y">Endpoints documentation can be found here.</a>
 
 ## Build
 
 `npm i` to install dependencies.
+
+## Serve
+
+`node index.js` to serve.
 
 ## Preferences
 
