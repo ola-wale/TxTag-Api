@@ -1,0 +1,6 @@
+
+> txtagapi@1.0.0 start /Users/wale/web/TxTagApi
+> node index.js
+
+Example app listening on port 3000!
+Connected to MongoDB
