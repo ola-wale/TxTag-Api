@@ -220,7 +220,8 @@ describe('loading express', function() {
       });
   });
 
-  it(`DELETE-ing the private/v1/auth/transactions should return the user's transactions as JSON`, function testSlash(done) {
+  it(`DELETE-ing the private/v1/auth/transactions should return with status code 200 and an empty json object
+      to confirm deletion.`, function testSlash(done) {
     request(server)
       .delete('/private/v1/transactions')
       .set('Authorization', `Bearer ${JWT}`)
@@ -230,7 +231,6 @@ describe('loading express', function() {
       .end(function(err, res) {
         expect(res.status).to.be.equal(200);
         expect(res.body).to.be.empty;
-        console.log(res.body);
         if (err) {
           return done(err);
         }
